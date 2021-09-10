@@ -1,0 +1,45 @@
+body {
+    background: #076585;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #fff, #076585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+    border: 1px solid darkred;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.animate {
+    animation: spinner 0.3s linear;
+} 
+
+h1,
+h4 {
+    font-weight: 700;
+    text-align: center;
+}
+
+
+button:hover,
+button:focus {
+    cursor: pointer;
+    background: pink;
+    color: black;
+}
+
+@keyframes spinner {
+    to {transform: rotate(360deg);}
+}
+
